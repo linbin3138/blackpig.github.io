@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="blackpig2.css" type="text/css" rel="stylesheet">
+    <title>播放界面</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/网易云/music.js">
+    </script>
+</head>
+<body>
+    <div id="firsttop" >
+        <div id="logo">
+            <a href="#"><img id="logo" src="/网易云/images/logo.png"></a>
+        </div>
+        <div id="firsttable">
+                <ul>
+                    <li><a href="/网易云/proj.html"><p>发现音乐</p></a></li>
+                    <li id="firstli"><a href="/网易云/friend.html"><p>我的音乐</p></a></li>
+                    <li><a href="#"><p>朋友</p></a></li>
+                    <li><a href="#"><p>商城</p></a></li>
+                    <li><a href="#"><p>音乐人</p></a></li>
+                    <li><a href="/网易云/download.html"><p>下载客户端</p></a></li>
+                </ul>
+        </div>
+        <div id="search">
+            <input type="text" id="inputsearch" value="" placeholder="搜索音乐" onkeydown="Searchtext()">
+        </div>
+        <div id="logindiv1">
+            <div id="logindiv2"><a href="#" id="login">登录</a></div>
+        </div>
+    </div>
+    <div id="songdiv">
+        <table id="songlist">
+        </table>
+    </div>
+    <div id="lyricdiv">
+    </div>
+    <div id="playdiv">
+        <audio id="song" src="" controls="controls" autoplay></audio>
+    </div>
+</body>
+</html>
